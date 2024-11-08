@@ -1,0 +1,64 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Left Side: Title */
+.navbar-left h1 {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+/* Right Side: Menu */
+.navbar-right ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-right ul li {
+    margin-left: 20px;
+}
+
+.navbar-right ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-right ul li a:hover {
+    color: #f7a440;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-right ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar-right ul li {
+        margin: 10px 0;
+    }
+}
